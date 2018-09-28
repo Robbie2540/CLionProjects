@@ -6,7 +6,7 @@ int main()
 	string name;
 	string favFood;
 	
-	cout << "What is your name?";
+	cout << "What is your name, man?";
 	cin >> name;
 	cout << "Hello, " << name << ", nice to see you what is your fav food?";
 	cin >> favFood;
