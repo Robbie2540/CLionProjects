@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <cstdlib>
+
 using namespace std;
 
 // characters
@@ -29,7 +31,7 @@ int main() {
    Wolf_lvl1.attack_Power = 100;
    Wolf_lvl1.Hp = 200;
 
-   // player   
+   // player
    Human mainChar;
    mainChar.Hp = 100;
    mainChar.Karma = 0;
@@ -51,26 +53,38 @@ int main() {
    while (mainChar.Hp > 0) {
       cout << "What type of player are you?\n" << endl; // initiates character type
 
-      cout << "At any time press any key to continue the dialogue" << endl;
-
       cout << "Are you the run and gun type that acts instantly without thinking always just in time to save the day?" << endl;
 
       cout << "Or are you the type of player who likes to sit plan and take a more thoughtful approach to the current situation" << endl;
-      
+
       cout << "Or are you a more balanced type that likes to switch it up?" << endl;
 
-      // TODO: infinite loop if use string
-      double characterType;
-      while (true) {
-         cout << "press 1,2,3" << endl;
+      signed int characterType = 5;
+      while ( characterType != 1 & characterType != 2 & characterType != 2) {
+         cout << "press 1 if you are the run and gun type, 2 if you are the thoughtful type, or 3 if you are the balanced type." << endl;
+
          cin >> characterType;
+          while(cin.fail() || characterType > 3 || characterType < 1) {
+              cout << "Entry must be 1, 2, or 3." << endl;
+              cin.clear();
+              cin.ignore(256,'\n');
+              cin >> characterType;}
+
+
          if (characterType == 1) {
             break;
-         } else if (characterType == 2) {
-            break;
-         } else if (characterType == 3) {
+         }
+         else if (characterType == 2)
+         {
             break;
          }
+         else if (characterType == 3)
+         {
+            break;
+         }
+
+
+
       }
 
       //initial wake up event
