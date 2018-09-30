@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/jle/Documents/GitHub/CLionProjects/collaboration/main.cpp" "/Users/jle/Documents/GitHub/CLionProjects/collaboration/cmake-build-debug/CMakeFiles/collaboration.dir/main.cpp.o"
+  "/Users/jle/Documents/GitHub/simpleGame/collaboration/main.cpp" "/Users/jle/Documents/GitHub/simpleGame/collaboration/cmake-build-debug/CMakeFiles/collaboration.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
